@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Koulen&display=swap");
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        position: relative;
+        background-color: #234239;
+        min-height: 100vh;
+        border: none;
+        overflow: hidden;
+      }
+
+      .top-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        max-width: 40vw;
+        height: auto;
+      }
+
+      .bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 600px;
+        max-width: 50vw;
+        height: auto;
+      }
+
+      .center-box {
+        padding: 20px 0px;
+        text-align: center;
+      }
+
+      .center-image {
+        width: 300px;
+        max-width: 80vw;
+        height: auto;
+      }
+
+      h1 {
+        color: white;
+        font-family: "Kaisei Opti", serif;
+        font-size: 20px;
+         font-weight: normal;
+        letter-spacing: 2px;
+      
+      }
+
+      h2 {
+        color: white;
+        font-family: "Kaisei Opti", serif;
+        font-size: 65px;
+        font-weight: normal; 
+        margin-bottom: 0;
+          margin-top: 10rem;
+      }
+
+      p {
+        color: white;
+        font-family: "Kaisei Opti", serif;
+      }
+
+      .leter-spa{letter-spacing:5px;}
+      .ctabutton {
+        padding: 17px 40px;
+        border-radius: 50px;
+
+        cursor: pointer;
+        border: 0;
+        background-color: white;
+        box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+        margin-top: 20vh;
+        letter-spacing: 1.5px;
+        font-size: 15px;
+        transition: all 0.5s ease;
+        font-family: "Kaisei Opti", serif;
+      }
+
+      .ctabutton:hover {
+        background-color: #037756;
+        color: white;
+        
+      }
+
+      .footer {
+        position: fixed; 
+        bottom: 0; 
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #3e5c53;
+      }
+
+      .footer p {
+        color: #747474;
+        font-size: 20px;
+        font-family: "Afacad", sans-serif;
+      }
+
+      .design {
+        color: white;
+        font-size: 16px;
+        font-family: "Afacad", sans-serif;
+        opacity: 0.8;
+      }
+
+      @media (max-width: 1024px) {
+        .center-box {
+          width: 80%;
+          left: 20%;
+          position: absolute;
+        }
+
+        .top-left {
+          width: 300px;
+        }
+
+        .bottom-right {
+          width: 420px;
+        }
+
+        .center-image {
+          width: 240px;
+        }
+
+        .ctabutton {
+          width: 50%;
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .center-box {
+          width: 90%;
+          left: 10%;
+          position: absolute;
+        }
+
+        .top-left {
+          width: 220px;
+        }
+
+        .bottom-right {
+          width: 300px;
+        }
+
+        .center-image {
+          width: 200px;
+        }
+
+        .ctabutton {
+          width: 60%;
+          font-size: 15px;
+          padding: 8px 10px;
+        }
+
+        .footer {
+          width: 500px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .center-box {
+          width: 92%;
+        }
+
+        .top-left {
+          width: 140px;
+        }
+
+        .bottom-right {
+          width: 200px;
+        }
+
+        .center-image {
+          width: 160px;
+        }
+
+        .ctabutton {
+          width: 80%;
+          font-size: 14px;
+          padding: 10px 12px;
+        }
+        .footer {
+          width: 300px;
+        }
+      }
+
+      @media (max-width: 360px) {
+        .center-image {
+          width: 140px;
+        }
+
+        .ctabutton {
+          width: 90%;
+        }
+        .footer {
+          width: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="bg-1.png" class="top-left" />
+      <img src="bg-2.png" class="bottom-right" />
+
+      <div class="center-box">
+        <img src="logo-paradise.png" class="center-image" />
+
+        <h1>Premium Mens Suiting & Shirting Fabrics</h1>
+
+        <h2>Elegance Is Being Woven.</h2>
+
+        <p class="leter-spa">A refined fabric collection crafted for timeless style.</p>
+
+        <button class="ctabutton">Discover the Collection</button>
+      </div>
+
+      <div class="footer">
+        <p>
+          ©
+          <span class="design"
+            >2026 Paradise Fabrics. All Rights Reserved.</span
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
